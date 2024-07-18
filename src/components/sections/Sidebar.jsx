@@ -144,7 +144,7 @@ export default function Sidebar() {
   return (
     <>
       <aside
-        className={`sidebar max-52 bg-base-200 h-screen transition-all px-2 pt-20 fixed md:sticky top-20 left-0 ${SidebarStyle} ${sidebarWidth}`}
+        className={`z-40 sidebar max-52 bg-base-200 h-screen transition-all px-2 pt-20 fixed md:sticky top-20 left-0 ${SidebarStyle} ${sidebarWidth}`}
       >
         {sidebarOption.map((data) => (
           // i know i have to add key....
@@ -154,7 +154,7 @@ export default function Sidebar() {
 
       {/* toggle btn to open/close or size +/- */}
       <button
-        className="z-40 btn btn-ghost btn-circle btn-md fixed left-0 m-4"
+        className="z-40 btn btn-ghost btn-circle btn-md fixed left-0 m-4 z-50"
         onClick={openSide}
       >
         <Menu size={22} />
