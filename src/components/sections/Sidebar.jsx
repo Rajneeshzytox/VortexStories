@@ -144,7 +144,7 @@ export default function Sidebar() {
   return (
     <>
       <aside
-        className={`z-40 sidebar max-52 bg-base-200 h-screen transition-all px-2 pt-20 fixed md:sticky top-20 left-0 ${SidebarStyle} ${sidebarWidth}`}
+        className={`z-40 sidebar max-52 bg-base-200 h-screen transition-all px-2 pt-20 fixed md:sticky top-20 left-0 overflow-y-scroll ${SidebarStyle} ${sidebarWidth}`}
       >
         {sidebarOption.map((data) => (
           // i know i have to add key....
