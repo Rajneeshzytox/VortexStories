@@ -7,7 +7,7 @@
     grid-template-areas: "header header header"
     "sidebar home side2"
     "sidebar home side2"
-    "sidebar footer footer";
+    "sidebar Footer Footer";
     grid-template-columns: auto 1fr auto;
     
 }
@@ -20,7 +20,7 @@
         "sidebar home"
         "sidebar top-post"
         "sidebar tags"
-        "sidebar footer";
+        "sidebar Footer";
         grid-template-columns: auto 1fr;
         grid-auto-rows: auto;
         grid-template-rows: auto;
@@ -29,7 +29,7 @@
 
 
 
-/* .root aside, .root header, .root footer{
+/* .root aside, .root header, .root Footer{
     border: 1px solid #445;
     background: #aaaaaaaf;
     min-width: 50px;
@@ -59,6 +59,6 @@
 .tags{
     grid-area: tags;
 }
-.footer{
-    grid-area: footer;
+.Footer{
+    grid-area: Footer;
 }
