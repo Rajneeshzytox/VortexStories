@@ -128,7 +128,7 @@ export default function Sidebar() {
     return (
       <a
         href={data.url}
-        className={`btn rounded-md w-full flex  py-2 flex-row h-fit shadow-none mb-1 ${activeIcon}`}
+        className={`btn btn-ghost rounded-md w-full flex  py-2 flex-row h-fit shadow-none mb-1 ${activeIcon}`}
       >
         {data.icon}
         {iconTextToggle && (
@@ -141,7 +141,7 @@ export default function Sidebar() {
   return (
     <>
       <aside
-        className={`z-40 sidebar max-52 bg-base-200 transition-all pl-2 py-8 fixed md:sticky top-20 left-0 ${SidebarStyle} ${sidebarWidth} overflow-y-scroll h-[90vh] rounded-md`}
+        className={`z-40 sidebar max-52 bg-base-100 transition-all pl-2 py-8 fixed md:sticky top-20 left-0 ${SidebarStyle} ${sidebarWidth} overflow-y-scroll h-[90vh] border-r-2 border-base-150`}
       >
         {/*Sidebar options icons */}
         {sidebarOption.map((data) => (

@@ -1,4 +1,4 @@
-
+// unsed in src > components > sections > header.jsx
 
 export default function InfoModal(){
     return(
