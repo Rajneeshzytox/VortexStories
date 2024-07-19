@@ -19,6 +19,7 @@ export default {
           neutral: "#6b7280",
           "neutral-content": "#e0e1e4",
           "base-100": "#ffffff",
+          "base-150": "#eeeeee",
           "base-200": "#dedede",
           "base-300": "#bebebe",
           "base-content": "#161616",
