@@ -4,7 +4,7 @@ import InfoModal from "../ui/InfoModal";
 export default function Header() {
   return (
     <>
-      <header className="header min-h-20 h-fit flex justify-between items-center pl-20 py-4 gap-6 flex-wrap first-letter pr-10 min-w-52 sticky top-0 backdrop-blur-sm z-50">
+      <header className="header min-h-20 h-fit flex justify-between items-center pl-20 py-4 gap-6 flex-wrap first-letter pr-10 min-w-52 sticky top-0 backdrop-blur-sm z-50 bg-base-100 bg-opacity-80 border-b-2 border-base-150">
         {/* #### headee text start */}
         <div className="capitalize ">
           <h1 className="font-bold text-black">Vortex Stories</h1>
