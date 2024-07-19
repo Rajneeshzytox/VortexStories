@@ -1,62 +1,60 @@
 import { useState, useEffect } from "react";
 // Icons for sidebar
-import { Home, Menu, Dog, Cat, Bird, Angry, Annoyed, Atom, AudioLines,  } from "lucide-react";
+import {
+  Home,
+  Menu,
+  Dog,
+  Cat,
+  Bird,
+  Angry,
+  Annoyed,
+  Atom,
+  AudioLines,
+} from "lucide-react";
 
 const sidebarOption = [
   {
     id: "Home",
     icon: <Home size="22" />,
     text: "Home",
-    url: "",
+    url: "#",
   },
   {
     id: "Dog",
     icon: <Dog size="22" />,
     text: "Dog",
-    url: "",
+    url: "#",
   },
   {
     id: "Cat",
     icon: <Cat size="22" />,
     text: "Cat",
-    url: "",
-  },
-  {
-    id: "Bird",
-    icon: <Bird size="22" />,
-    text: "Bird",
-    url: "",
+    url: "#",
   },
   {
     id: "Angry",
     icon: <Angry size="22" />,
     text: "Angry",
-    url: "",
+    url: "#",
   },
   {
     id: "Annoyed",
     icon: <Annoyed size="22" />,
     text: "Annoyed",
-    url: "",
+    url: "#",
   },
   {
     id: "Atom",
     icon: <Atom size="22" />,
     text: "Atom",
-    url: "",
-  },
-  {
-    id: "AudioLines",
-    icon: <AudioLines size="22" />,
-    text: "AudioLines",
-    url: "",
+    url: "#",
   },
 ];
 
 // Main Sidebar
 export default function Sidebar() {
   // general style variable to change/ toggle
-  const smallSidebarStyle = "w-20 *:justify-center *:text-xs *:gap-2";
+  const smallSidebarStyle = "w-[85px] *:justify-center *:text-xs *:gap-2";
   const bigSidebarStyle = "w-52 *:justify-start *:text-sm *:gap-5";
   const showSidebar = "translate-x-0 pointer-events-auto opacity-1";
   const hideSidebar = "-translate-x-full pointer-events-none opacity-0";
@@ -82,19 +80,19 @@ export default function Sidebar() {
       setScreenSize("big");
       setSidebarWidth(smallSidebarStyle);
       setSidebarStyle(showSidebar);
-      setIconTextToggle(false)
+      setIconTextToggle(false);
     } else if (width >= 1024) {
       // if screen is greater than the 1024 than show sidebar by default and width as 52
       setScreenSize("big");
       setSidebarWidth(bigSidebarStyle);
       setSidebarStyle(showSidebar);
-      setIconTextToggle(true)
+      setIconTextToggle(true);
     } else {
       // if screen is small than the 767 than hide sidebar by default and width as 52
       setScreenSize("small");
       setSidebarStyle(hideSidebar);
       setSidebarWidth(bigSidebarStyle);
-      setIconTextToggle(true)
+      setIconTextToggle(true);
     }
   };
 
@@ -114,7 +112,7 @@ export default function Sidebar() {
       const sideWidth =
         sidebarWidth === bigSidebarStyle ? smallSidebarStyle : bigSidebarStyle;
       setSidebarWidth((old) => sideWidth);
-      setIconTextToggle(old => !old)
+      setIconTextToggle((old) => !old);
     } else {
       // console.log("Hello small");
       const setSidebar =
@@ -129,9 +127,8 @@ export default function Sidebar() {
     const activeIcon = "";
     return (
       <a
-        
         href={data.url}
-        className={`btn rounded-md w-full flex  py-2 flex-row h-fit shadow-none ${activeIcon}`}
+        className={`btn rounded-md w-full flex  py-2 flex-row h-fit shadow-none mb-1 ${activeIcon}`}
       >
         {data.icon}
         {iconTextToggle && (
@@ -144,17 +141,23 @@ export default function Sidebar() {
   return (
     <>
       <aside
-        className={`z-40 sidebar max-52 bg-base-200 h-screen transition-all px-2 pt-20 fixed md:sticky top-20 left-0 overflow-y-scroll ${SidebarStyle} ${sidebarWidth}`}
+        className={`z-40 sidebar max-52 bg-base-200 transition-all pl-2 py-8 fixed md:sticky top-20 left-0 ${SidebarStyle} ${sidebarWidth} overflow-y-scroll h-[90vh] rounded-md`}
       >
+        {/*Sidebar options icons */}
         {sidebarOption.map((data) => (
           // i know i have to add key....
           <NavLink data={data} />
         ))}
+
+        {/* divider */}
+        <div className="divider divider-start w-1/2 mx-auto"></div>
+
+        
       </aside>
 
-      {/* toggle btn to open/close or size +/- */}
+      {/* toggle btn to open/close sidebar or size +/- */}
       <button
-        className="z-40 btn btn-ghost btn-circle btn-md fixed left-0 m-4 z-50"
+        className=" btn btn-ghost btn-circle btn-md fixed left-0 m-4 z-50"
         onClick={openSide}
       >
         <Menu size={22} />
