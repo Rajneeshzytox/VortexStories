@@ -18,7 +18,7 @@ function App() {
       <div className="lg:hidden block profile"><Profile /></div>
       <div className="lg:hidden block top-post"><TopPost /></div>
         {/* group display om larger scren */}
-      <div className="side2 hidden lg:block sticky top-20 h-screen w-64">
+      <div className="side2 hidden lg:block w-64 border-l-2 border-base-150 bg-secondary">
         <Profile />
         <TopPost />
         <Tags />
