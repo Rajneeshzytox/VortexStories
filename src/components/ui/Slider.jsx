@@ -1,4 +1,4 @@
-import { slides } from '../../data/imgSlide';
+import { slides } from '../../data/imgSlideData';
 import { ChevronRight, ChevronLeft, Play, Pause } from 'lucide-react';
 
 import React, { useState, useEffect } from 'react';
