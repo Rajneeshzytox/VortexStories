@@ -34,7 +34,7 @@ export function SecondaryCard1() {
         {/* CARD OPTIONS */}
         <div className="flex gap-4 justify-between items-center w-[80%] mt-4">
             <div className="flex gap-4 items-center">
-            <a className="bg-base-200 px-4 rounded-full text-sm py-[2px] flo">Read More...</a>
+            <a className="bg-secondary text-secondary-content px-4 rounded-md text-sm py-[2px] cursor-pointer">Read More...</a>
             <a className="text-xs text-neutral">4 days ago</a>
             </div>
             <div className="">
