@@ -8,7 +8,7 @@ export default function InfoModal(){
         {/* info modal Box */}
         <label
           htmlFor="info-modal"
-          className="cursor-help btn btn-circle btn-sm btn-primary animate-bounce"
+          className="cursor-help btn btn-circle btn-sm btn-primary animate-bounce border-base-200 border-2"
         >
           i
         </label>
