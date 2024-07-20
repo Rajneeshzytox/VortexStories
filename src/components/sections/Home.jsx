@@ -1,6 +1,7 @@
 import Carousel from "../ui/Slider"
 import PrimaryCard from "../ui/card"
 import { SecondaryCard1 } from "../ui/secondaryCards"
+import Panigation from "../ui/Panigation"
 
 export default function Home(){
     return(
@@ -20,6 +21,11 @@ export default function Home(){
             <SecondaryCard1 />
             <SecondaryCard1 />
             <SecondaryCard1 />
+
+            <div className="flex justify-center">
+
+            <Panigation />
+            </div>
 
         </main>
         </>
