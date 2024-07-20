@@ -1,5 +1,5 @@
-import { topPostData } from "../../data/topPost";
-import { ArrowUpRightFromCircle, ArrowUpRight } from "lucide-react";
+import { topPostData } from "../../data/topPostData";
+import { ArrowUpRight } from "lucide-react";
 
 export default function TopPost() {
   return (
