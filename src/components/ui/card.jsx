@@ -1,8 +1,8 @@
 export default function PrimaryCard() {
   return (
     <>
-      <div className="min-w-64 card bg-base-100 rounded-2xl shadow-lg p-2">
-        <figure className="w-full h-32 bg-base-300 rounded-xl">
+      <div className="min-w-64 card bg-base-100 rounded-lg shadow-lg p-2">
+        <figure className="w-full h-32 bg-base-300 rounded-md">
           {/* img here */}
         </figure>
 
@@ -26,7 +26,7 @@ export default function PrimaryCard() {
             </div>
             {/* Card Tags */}
             <div className="CardTags *:inline-block">
-                <span className="badge badge-secondary px-4 ">Tag 1</span>
+                <a href="#" className="badge badge-secondary rounded-md px-4 ">Tag 1</a>
             </div>
         </div>
       </div>
