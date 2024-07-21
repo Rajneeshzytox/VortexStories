@@ -28,7 +28,7 @@ export default function Footer() {
         </form>
 
         {/* ACTUAL FOOTER WITH LINKS  */}
-        <div className="footer overflow-clip p-10 bg-primary text-primary-content *:min-w-32 z-auto">
+        <div className="footer overflow-clip p-10 bg-base-300 text-base-content *:min-w-32 z-auto">
           <nav>
             <h6 className="footer-title z-0">Vortex Stories </h6>
             <a className="link link-hover">Articles Generator</a>
