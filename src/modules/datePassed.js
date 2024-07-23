@@ -21,7 +21,7 @@
 
     // ## Yeah Yeah I know there can be other goods methods to do this but, i just want the work to be dome
     
-    // also you can add extra if else for the singular plural, i.e.: 1 days ago, 1 years, ago...
+    // also you can add extra if else for the singular plural, i.e.: 1 days ago, 1 years, ago..
 
     // check for year
     if(oldYear !== currYear){
