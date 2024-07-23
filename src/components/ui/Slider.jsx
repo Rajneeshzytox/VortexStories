@@ -44,7 +44,7 @@ const Carousel = () => {
           {slides.map((slide, index) => (
              <div
              key={index}
-             className={`w-full h-52 ${(index === currentIndex? 'flex-shrink': 'flex-shrink-0')}`}
+             className={`w-full h-52 ${(index === currentIndex? 'block': 'hidden')}`}
            >
              <img src={slide.imageUrl} alt={slide.imageAlt} className="w-full h-full object-cover" />
            </div>
