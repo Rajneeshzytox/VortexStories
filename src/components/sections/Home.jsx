@@ -2,6 +2,11 @@ import Carousel from "../ui/Slider";
 import PrimaryCard from "../ui/card";
 import { SecondaryCard1 } from "../ui/secondaryCards";
 import Panigation from "../ui/Panigation";
+import SimpleSlider from "../ui/Carousel";
+
+// data for carousels
+import { slides } from "../../data/imgSlideData";
+import { FeaturedPostData } from "../../data/FeaturedPostData";
 
 export default function Home() {
   return (
@@ -9,13 +14,23 @@ export default function Home() {
       <main className="home min-h-[100vh] overflow-hidden px-6 py-5 w-full">
         {/* slider */}
         <Carousel />
+        
 
         <div className="font-bold text-lg mt-10 mb-4">Featured Posts</div>
-        <div className="flex w-full overflow-x-scroll  gap-8">
-          <PrimaryCard />
-          <PrimaryCard />
-          <PrimaryCard />
-        </div>
+
+        <SimpleSlider>
+       
+          {
+            FeaturedPostData.map((card, index) => (
+              <PrimaryCard data={FeaturedPostData[index]}/>
+
+            ))
+          }
+        
+
+        </SimpleSlider>
+
+
 
         <div className="font-bold text-lg mt-10 mb-4">Top News</div>
         <SecondaryCard1 />
