@@ -1,5 +1,5 @@
 # Vortex Stories V4 
-"**Blog News Articles Platform React Frontend**"
+**Blog News Articles Platform React Frontend**
 
 ## Index
 - [Introduction](#introduction)
@@ -23,7 +23,7 @@ The new version will use React and TailwindCSS for the frontend, and Node.js, Ex
 This repository focuses on the frontend development to showcase my skills in frontend development.
 
 ## Live View
-- [Visit New Vortex Stories] 
+- [Visit New Vortex Stories](https://vortex-stories.netlify.app/) 
 
 - [View Old Project](http://vortexstories.lovestoblog.com/?i=1)
 
@@ -54,6 +54,8 @@ This repository focuses on the frontend development to showcase my skills in fro
 - Dashboard for Article Writing/backend
 
 ## Images
+Always see live View [Visit Vortex Stories](https://vortex-stories.netlify.app/)
+
 
 - Project Plan Layout (Paint)
  ![Layout Plan](public/preview/layout%20plan.png)
